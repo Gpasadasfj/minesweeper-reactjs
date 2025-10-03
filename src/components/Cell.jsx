@@ -1,3 +1,6 @@
+import { useLongPress } from "use-long-press";
+import { useRef } from "react";
+
 export default function Cell({
   isMine,
   neighborMines,
@@ -5,8 +8,30 @@ export default function Cell({
   isFlagged,
   onClick,
   onRightClick,
+  onLongPress,
 }) {
   let classN;
+  const longPressTriggered = useRef(false);
+
+  const bind = useLongPress(
+    () => {
+      longPressTriggered.current = true;
+      onLongPress();
+    },
+    {
+      threshold: 500,
+      captureEvent: true,
+      cancelOnMovement: true,
+    }
+  );
+
+  const handleClick = () => {
+    if (longPressTriggered.current) {
+      longPressTriggered.current = false;
+      return;
+    }
+    onClick();
+  };
 
   const handleRightClick = (e) => {
     e.preventDefault();
@@ -28,7 +53,12 @@ export default function Cell({
   }
 
   return (
-    <td onClick={onClick} onContextMenu={handleRightClick} className={classN}>
+    <td
+      {...bind()}
+      onClick={handleClick}
+      onContextMenu={handleRightClick}
+      className={classN}
+    >
       {content}
     </td>
   );

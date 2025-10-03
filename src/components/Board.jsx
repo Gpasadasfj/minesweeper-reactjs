@@ -18,6 +18,7 @@ export default function Board({ board, revealCell, toggleFlag }) {
                   isFlagged={cell.isFlagged}
                   onClick={() => revealCell(i, j)}
                   onRightClick={() => toggleFlag(i, j)}
+                  onLongPress={() => toggleFlag(i, j)}
                 />
               ))}
             </tr>
