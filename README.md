@@ -1,16 +1,22 @@
-# React + Vite
+# Minesweeper ReactJS 🧩💣
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una implementación del clásico juego **Buscaminas**, desarrollado con **ReactJS**.  
+Se trata de la **versión refactorizada** de mi proyecto final en **JavaScript vanilla**, ahora migrado a React para aprovechar las ventajas de componentes, estados y un flujo más mantenible y escalable.
 
-Currently, two official plugins are available:
+🔗 **Demo en producción:** [Minesweeper ReactJS](https://gpasadasfj.github.io/minesweeper-reactjs/)  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Tecnologías utilizadas
+- ⚛️ **ReactJS** – Librería principal para la construcción de la UI.  
+- ⚡ **Vite** – Herramienta de bundling y desarrollo rápido.  
+- 🎨 **CSS Modules** – Estilos encapsulados para cada componente.  
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🎮 Características del juego
+- Tablero dinámico generado a partir de filas y columnas.  
+- Detección automática de minas y números adyacentes.  
+- Lógica de *game over* y victoria implementada.  
+- Reinicio del juego sin recargar la página.  
+- Interfaz responsiva y amigable.  
