@@ -9,8 +9,7 @@ Se trata de la **versión refactorizada** de mi proyecto final en **JavaScript v
 
 ## 🚀 Tecnologías utilizadas
 - ⚛️ **ReactJS** – Librería principal para la construcción de la UI.  
-- ⚡ **Vite** – Herramienta de bundling y desarrollo rápido.  
-- 🎨 **CSS Modules** – Estilos encapsulados para cada componente.  
+- ⚡ **Vite** – Herramienta de bundling y desarrollo rápido. 
 
 ---
 
